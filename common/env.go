@@ -49,6 +49,7 @@ func initEnv() {
 	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL")
 	if BingBaseUrl != "" {
 		BING_PROXY_URL, _ = url.Parse(BingBaseUrl)
+		BING_URL, _ = url.Parse(BingBaseUrl)
 	}
 	if SydneyBaseUrl != "" {
 		BING_SYDNEY_DOMAIN = SydneyBaseUrl
