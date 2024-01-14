@@ -23,6 +23,7 @@ var (
 	BypassServer  string
 	BingBaseUrl   string
 	SydneyBaseUrl string
+	BING_PROXY_URL, _         = url.Parse("https://www.bing.com")
 )
 
 func init() {
@@ -47,7 +48,7 @@ func initEnv() {
 	BingBaseUrl = os.Getenv("BING_BASE_URL")
 	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL")
 	if BingBaseUrl != "" {
-		BING_URL, _ = url.Parse(BingBaseUrl)
+		BING_PROXY_URL, _ = url.Parse(BingBaseUrl)
 	}
 	if SydneyBaseUrl != "" {
 		BING_SYDNEY_DOMAIN = SydneyBaseUrl
