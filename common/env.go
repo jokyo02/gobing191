@@ -45,8 +45,8 @@ func initEnv() {
 
 	BypassServer = os.Getenv("BYPASS_SERVER")
 
-	BingBaseUrl = os.Getenv("BING_BASE_URL")
-	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL")
+	BingBaseUrl = os.Getenv("BING_BASE_URL") || os.Getenv("BING_PROXY_DM")
+	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL") || os.Getenv("SYDNEY_PROXY_DM")
 	if BingBaseUrl != "" {
 		BING_PROXY_URL, _ = url.Parse(BingBaseUrl)
 	}
