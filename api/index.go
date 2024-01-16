@@ -17,9 +17,10 @@ func Index(w http.ResponseWriter, r *http.Request) {
 			helper.UnauthorizedResult(w)
 			return
 		}
-		common.NewSingleHostReverseProxy(common.BING_PROXY_URL).ServeHTTP(w, r)
-	}else{
-	common.NewSingleHostReverseProxy(common.BING_URL).ServeHTTP(w, r)
 	}
+		common.NewSingleHostReverseProxy(common.BING_PROXY_URL).ServeHTTP(w, r)
+//	}else{
+//	common.NewSingleHostReverseProxy(common.BING_URL).ServeHTTP(w, r)
+//	}
 
 }
