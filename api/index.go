@@ -18,6 +18,6 @@ func Index(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	common.NewSingleHostReverseProxy(common.BING_URL).ServeHTTP(w, r)
+	common.NewSingleHostReverseProxy(common.BING_PROXY_URL).ServeHTTP(w, r)
 
 }
