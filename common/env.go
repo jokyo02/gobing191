@@ -1,7 +1,7 @@
 package common
 
 import (
-//	"net/url"
+	"net/url"
 	"os"
 	"strings"
 )
@@ -22,8 +22,8 @@ var (
 	AUTH_KEY_COOKIE_NAME = "BingAI_Auth_Key"
 
 	BypassServer  string
-//	BingBaseUrl   string
-//	SydneyBaseUrl string
+	BingBaseUrl   string
+	SydneyBaseUrl string
 //	BING_PROXY_URL, _         = url.Parse("https://www.bing.com")
 
 	User_Agent        string = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0"
@@ -53,21 +53,21 @@ func initEnv() {
 
 	BypassServer = os.Getenv("BYPASS_SERVER")
 
-//	BingBaseUrl = os.Getenv("BING_BASE_URL")
+	BingBaseUrl = os.Getenv("BING_BASE_URL")
 //	if os.Getenv("BING_PROXY_DM") != "" {
 //		BingBaseUrl = os.Getenv("BING_PROXY_DM")
 //	}
-//	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL")
+	SydneyBaseUrl = os.Getenv("SYDNEY_BASE_URL")
 //	if os.Getenv("SYDNEY_PROXY_DM") != "" {
 //		SydneyBaseUrl = os.Getenv("SYDNEY_PROXY_DM")
 //	}
-//	if BingBaseUrl != "" {
-//		BING_PROXY_URL, _ = url.Parse(BingBaseUrl)
-//	}
-//	if SydneyBaseUrl != "" {
-//		BING_SYDNEY_DOMAIN = SydneyBaseUrl
-//		BING_SYDNEY_URL, _ = url.Parse(BING_SYDNEY_DOMAIN)
-//	}
+	if BingBaseUrl != "" {
+		BING_URL, _ = url.Parse(BingBaseUrl)
+	}
+	if SydneyBaseUrl != "" {
+		BING_SYDNEY_DOMAIN = SydneyBaseUrl
+		BING_SYDNEY_URL, _ = url.Parse(BING_SYDNEY_DOMAIN)
+	}
 }
 
 func initUserToken() {
