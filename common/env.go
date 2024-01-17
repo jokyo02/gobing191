@@ -24,6 +24,7 @@ var (
 	BypassServer  string
 	BingBaseUrl   string
 	SydneyBaseUrl string
+	BING_PROXY_URL, _         = url.Parse("https://www.bing.com")
 
 	User_Agent        string = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0"
 	User_Agent_Mobile string = "Mozilla/5.0 (iPhone; CPU iPhone OS 15_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.7 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.410529013"
@@ -61,7 +62,7 @@ func initEnv() {
 		SydneyBaseUrl = os.Getenv("SYDNEY_PROXY_DM")
 	}
 	if BingBaseUrl != "" {
-		BING_URL, _ = url.Parse(BingBaseUrl)
+		BING_PROXY_URL, _ = url.Parse(BingBaseUrl)
 	}
 	if SydneyBaseUrl != "" {
 		BING_SYDNEY_DOMAIN = SydneyBaseUrl
