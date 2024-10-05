@@ -19,6 +19,6 @@ _w.rms.js(
   { 'A:rms:answers:CodexBundle:cib-bundle': '/rp/6JYDi9-2XVe6p7GjQcvfkzdAi_0.br.js' },
   { 'A:rms:answers:SharedStaticAssets:speech-sdk': '/rp/6slp3E-BqFf904Cz6cCWPY1bh9E.br.js' },
   { 'A:rms:answers:Web:SydneyWelcomeScreenBase':'/rp/KgDPK_mKWjMgWe6o0SKA9dfE00Y.br.js' },
-  { 'A:rms:answers:Web:SydneyWelcomeScreen':'/rp/sNzL8vfHHNmyqYOSQey9fNYd3kI.br.js' },
+ // { 'A:rms:answers:Web:SydneyWelcomeScreen':'/rp/sNzL8vfHHNmyqYOSQey9fNYd3kI.br.js' },
   { 'A:rms:answers:Web:SydneyFullScreenConv': '/rp/woTEvR_zADcXDZ_3430ZOYBRkus.br.js' },
   );
