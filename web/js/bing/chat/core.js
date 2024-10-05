@@ -10,13 +10,13 @@
 }
 )(_w.onload, _w.si_PP);
 _w.rms.js(
-  { 'A:rms:answers:Shared:BingCore.Bundle': '/rp/v-9MDlZf3UpTm3z78CHvLGE8SMU.gz.js' },
+  { 'A:rms:answers:Shared:BingCore.Bundle': '/rp/a224OTR91R7nhnUp3RpvwJI8dVU.br.js' },
   //{ 'A:rms:answers:Shared:BingCore.Bundle': '/rp/IvfoLO3XuUzsCyfv53CD-ckZU3s.br.js' },
   { 'A:rms:answers:Web:FreeSydneyHelper': '\/rp\/cfhgV3_HFyB3URSxigzE0QzgsF8.br.js' },
   { 'A:rms:answers:Web:SydneyFSCHelper': '/rp/UHSe4HZxjUmY8afun89YHML74eQ.br.js' },
   { 'A:rms:answers:VisualSystem:ConversationScope': '/rp/hcAzGBxfE9oRVAA1rPm7ah7lmms.br.js' },
  //{ 'A:rms:answers:CodexBundle:cib-bundle': '/rp/_lytZzaZiTlZINgpNKZ-D0qMH_o.br.js' },
-  { 'A:rms:answers:CodexBundle:cib-bundle': '/rp/p6yM7JqIx0Y-tV67dzlhxRtdTkA.gz.js' },
+  { 'A:rms:answers:CodexBundle:cib-bundle': '/rp/6JYDi9-2XVe6p7GjQcvfkzdAi_0.br.js' },
   { 'A:rms:answers:SharedStaticAssets:speech-sdk': '/rp/6slp3E-BqFf904Cz6cCWPY1bh9E.br.js' },
   { 'A:rms:answers:Web:SydneyWelcomeScreenBase':'/rp/KgDPK_mKWjMgWe6o0SKA9dfE00Y.br.js' },
   { 'A:rms:answers:Web:SydneyWelcomeScreen':'/rp/sNzL8vfHHNmyqYOSQey9fNYd3kI.br.js' },
